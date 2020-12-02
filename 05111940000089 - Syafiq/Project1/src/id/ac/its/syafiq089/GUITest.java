@@ -10,8 +10,8 @@ public class GUITest {
 		
 		Circle circle = new Circle("White", radius);
 		
-		JOptionPane.showMessageDialog(null, String.format("The Area of circle with %.2f radius is %.2f", circle.getRadius(), circle.getArea()));
-		JOptionPane.showMessageDialog(null, String.format("The Perimeter of circle with %.2f radius is %.2f", circle.getRadius(), circle.getPerimeter()));
+		JOptionPane.showMessageDialog(null, String.format("The Area of circle with %.2f radius is %.2f", circle.getRadius(), circle.getArea()), "Circle Area Operation Result",JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(null, String.format("The Perimeter of circle with %.2f radius is %.2f", circle.getRadius(), circle.getPerimeter()), "Circle Perimeter Operation Result",JOptionPane.INFORMATION_MESSAGE);
 	}
 
 }

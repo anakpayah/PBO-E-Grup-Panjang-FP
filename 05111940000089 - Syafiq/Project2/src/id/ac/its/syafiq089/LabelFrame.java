@@ -5,7 +5,6 @@ import java.awt.Image;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
 
@@ -16,35 +15,26 @@ public class LabelFrame extends JFrame {
 	private final JLabel label4;
 	
 	public LabelFrame() {
-		super("Testing JLabel");
+		super("Kartu Mahasiswa ITS");
 		setLayout(new FlowLayout());
 		
 		label1 = new JLabel("Kartu Mahasiswa ITS", SwingConstants.CENTER);
-		label1.setToolTipText("This is label1");
+		label1.setToolTipText("Always use Kartu Mahasiswa ITS in a good purpose");
 		add(label1);
 		
 		ImageIcon profile = new ImageIcon(getClass().getResource("NanoDev.png"));
 		profile = new ImageIcon(profile.getImage().getScaledInstance(200, 200, Image.SCALE_DEFAULT));
 		
 		label2 = new JLabel(profile, SwingConstants.CENTER);
-		label2.setToolTipText("This is label2");
+		label2.setToolTipText("Your photo is outstanding, please stay at home");
 		add(label2);
 		
-//		label3 = new JLabel();
-//		label3.setText("Label with icon and text at bottom");
-//		label3.setIcon(profile);
-//		label3.setHorizontalTextPosition(SwingConstants.CENTER);
-//		label3.setVerticalTextPosition(SwingConstants.BOTTOM);
-//		label3.setToolTipText("This is label3");
-//		label3.setToolTipText("This is label2");
-//		add(label3);
-		
 		label3 = new JLabel("Ahmad Syafiq Aqil Wafi", SwingConstants.CENTER);
-		label3.setToolTipText("This is label3");
+		label3.setToolTipText("Your FullName Identity");
 		add(label3);
 		
 		label4 = new JLabel("05111940000089", SwingConstants.CENTER);
-		label4.setToolTipText("This is label4");
+		label4.setToolTipText("Your NRP Identity");
 		add(label4);
 	}
 }
